@@ -1,6 +1,15 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1>UI fundamentals</h1>
+    <div class="intro">
+      <img class="intro__profile" src="https://media-exp1.licdn.com/dms/image/C4E03AQEtahgYhj6lBg/profile-displayphoto-shrink_100_100/0/1622296759674?e=1664409600&v=beta&t=Ef1Kl12WPhk7-ucacC5neigAvq1zdO8OgMqVr34w3Og" alt="Photo of Rohan">
+      <p class="intro__content">
+        A UI challenge performed by <a href="https://www.linkedin.com/in/rohanvanwijk/" target="_blank" rel="noreferrer">Rohan</a>. The goal of this challenge is to improve UI design skills for
+        <a href="https://synetic.nl" rel="noreferrer" target="_blank">Synetic</a>. The course can be found on <a href="https://scrimba.com/learn/design" target="_blank" rel="noreferrer">Scrimba</a>.
+      </p>
+    </div>
+
+    <hr />
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
       check out the
@@ -33,14 +42,11 @@
 <script>
 export default {
   name: 'HelloWorld',
-  props: {
-    msg: String
-  }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss" scoped>
 h3 {
   margin: 40px 0 0;
 }
@@ -52,7 +58,13 @@ li {
   display: inline-block;
   margin: 0 10px;
 }
-a {
-  color: #42b983;
+
+.intro {
+  display: flex;
+  gap: 1em;
+
+  &__profile {
+    border-radius: 50%;
+  }
 }
 </style>

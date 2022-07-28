@@ -1,5 +1,6 @@
 <template>
   <h1>Design Challenge 1</h1>
+  <h2>Alignment and whitespace</h2>
   <p>
     Use the following properties
     to fix the alignment and white
@@ -80,7 +81,7 @@ p.date {
     text-align: left;
   }
 }
-h3, h1, h2 {
+h3 {
   margin: 0;
   .solution & {
     margin-bottom: 0.4em;

@@ -23,6 +23,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import "./styles/variables";
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -32,6 +34,7 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  font-size: 1.4rem;
   @media screen and (min-width: 1000px) {
     flex-direction: row;
   }
@@ -43,5 +46,11 @@ export default {
   max-width: 1150px;
   margin: 0 auto;
   padding: 0 1.2em;
+}
+a {
+  color: $color-link;
+}
+h3, h1, h2 {
+  margin-top: 0;
 }
 </style>
