@@ -34,7 +34,7 @@
 <script>
 
 export default {
-  name: 'ChallengeOne',
+  name: 'ChallengeTwo',
   data() {
     return {
       cardData: {

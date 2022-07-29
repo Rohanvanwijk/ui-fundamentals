@@ -24,6 +24,10 @@ export default {
         {
           name: 'Challenge 2',
           path: '/challenge-2'
+        },
+        {
+          name: 'Challenge 3',
+          path: '/challenge-3'
         }
       ]
     };
