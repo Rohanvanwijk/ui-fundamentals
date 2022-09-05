@@ -28,6 +28,10 @@ export default {
         {
           name: 'Challenge 3',
           path: '/challenge-3'
+        },
+        {
+          name: 'Challenge 4',
+          path: '/challenge-4'
         }
       ]
     };

@@ -20,7 +20,9 @@
     <h2>Solution</h2>
     <div class="container">
       <div class="card" v-for="index in 5" :key="index">
-        <img class="image" :src="cardData.image" alt="foto">
+        <div class="card-image-container">
+          <img class="image" :src="cardData.image" alt="foto">
+        </div>
         <div class="content">
           <p class="date">{{ cardData.date }}</p>
           <h3>{{ cardData.title }}</h3>
@@ -95,7 +97,11 @@ h3 {
     font-size: 0.6em;
     opacity: 0.8;
     text-transform: uppercase;
-    text-align: right;
+  }
+  .card-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 </style>
