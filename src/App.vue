@@ -41,6 +41,9 @@ export default {
   &__navigation {
     flex-basis: 20%;
   }
+  &__content {
+    flex-basis: calc(100% - 20% - 2rem);
+  }
 }
 .container-app {
   max-width: 1150px;
