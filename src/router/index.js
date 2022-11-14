@@ -4,6 +4,7 @@ import ChallengeOne from '../pages/challenge-1.vue';
 import ChallengeTwo from '../pages/challenge-2.vue';
 import ChallengeThree from '../pages/challenge-3.vue';
 import ChallengeFour from '../pages/challenge-4.vue';
+import ChallengeFive from '../pages/challenge-5.vue';
 
 const routes = [
     {
@@ -30,7 +31,12 @@ const routes = [
         path: '/challenge-4',
         name: 'Challenge 4',
         component: ChallengeFour,
-    }
+    },
+    {
+        path: '/challenge-5',
+        name: 'Challenge 5',
+        component: ChallengeFive,
+    },
 ];
 
 const router = createRouter({

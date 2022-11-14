@@ -1,8 +1,16 @@
 <template>
   <nav>
     <ul class="list">
-      <li class="list__item" v-for="navigation in navigations" :key="navigation.path">
-        <router-link :to="navigation.path" class="list__link">{{ navigation.name }}</router-link>
+      <li class="list__item" v-for="(navigation, index) in navigations" :key="navigation.path">
+        <router-link
+            :to="navigation.path"
+            :class="[
+                'list__link',
+                navigations[index].name === navigation.name ? 'active' : null,
+                ]"
+        >
+          {{ navigation.name }}
+        </router-link>
       </li>
     </ul>
   </nav>
@@ -32,7 +40,11 @@ export default {
         {
           name: 'Challenge 4',
           path: '/challenge-4'
-        }
+        },
+        {
+          name: 'Challenge 5',
+          path: '/challenge-5',
+        },
       ]
     };
   },
